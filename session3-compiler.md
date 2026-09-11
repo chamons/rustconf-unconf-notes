@@ -19,3 +19,15 @@
     - There is a C API for LLVM that is stable
   - No extension points in rust compiler compared to LLVM no way to add passes
     - Discussion: If you use rustc as a library there are somehooks (before MIR, MIR emission, etc)
+    - No stable guarantees from rustc crate?
+    - Much of this is "you can do it, but you are your own"
+    - A lot of rust is unspecified, lets project evolve project more rapidly
+  - There is a trade off for core-team flexibility vs external contribs
+  - rustc public - Does that cover what you need? 
+    - https://doc.rust-lang.org/nightly/nightly-rustc/rustc_public/index.html
+    - API is quite limited, he wants more surface here
+  - Idea: What about limited stability within a edition? 
+    - Crate gets compiled into AST
+    - Lot of edition stuff happens very early before AST
+    - Compiler interfaces would be much after that, so it really doesn't help
+  -

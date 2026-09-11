@@ -104,3 +104,14 @@
   - One person has 13 different top level crates
   - Host targets + embedded targets in single workspaces pain
   - Workspaces work well with library + one or two executables, until you have different features
+  - rustls - Example with many independent crates and impl crates (?)
+- Having an internal registry made one company go well
+  - Wasn't too hard to setup
+  - Works well unless you accidentally leak the auth key
+  - Name conflicts can be annoying
+  - Crates doesn't have namespaces today, so you need 
+  - RFC for namespaces - Already merged but impl is inflight? Waiting on compiler work and rust-analyzer
+    - This wasn't designed for organizer vs optional
+    - Every random person shouldn't be able to push a Microsoft prefixed name
+    - This would potentially help with with discoverable / trust
+    - foo-utils, utils-foo, utils-rs - Are they from the same team or a random

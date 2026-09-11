@@ -140,3 +140,6 @@
   - Discussion for a centralize target directory
   - https://github.com/dnlmlr/cargo-clean-all
   - Slowly grows, old dependencies
+  - Target directory in ramfs
+- Where can we discussion this more
+  - Zulip - https://rust-lang.zulipchat.com/

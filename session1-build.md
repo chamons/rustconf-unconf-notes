@@ -142,4 +142,4 @@
   - Slowly grows, old dependencies
   - Target directory in ramfs
 - Where can we discussion this more
-  - Zulip - https://rust-lang.zulipchat.com/
+  - Zulip - https://rust-lang.zulipchat.com/#narrow/channel/246057-t-cargo

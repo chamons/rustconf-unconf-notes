@@ -11,4 +11,11 @@
   - Question - about under the hood details, but no one in room knew details (location sensitive type checking?)
   - 2018/2019 core book had some details and some blog posts
   - Effectively required rewriting the entire borrow checker, so they are doing some bits piece by piece
--
+- Composable and Extensibility of compiler
+  - You statically link rustc binaries and then build on top of this
+  - Stable MIR it towards the goal
+  - LLVM is way more composable (except version locked)
+    - There is an auto upgrade IR path for LLVM
+    - There is a C API for LLVM that is stable
+  - No extension points in rust compiler compared to LLVM no way to add passes
+    - Discussion: If you use rustc as a library there are somehooks (before MIR, MIR emission, etc)

@@ -58,5 +58,17 @@
   - Another project had a dev write up a top level RFC and farmed that out to newer devs
   - Best today - Bug someone on zulip
   - What is a company wants to drop some money to get a certain issues fixes?
+    - Can Rust commercial network solve this? Especially for companies too small for silver levels
+      - One company got a feature funded, small company + Microsoft
   - There are some smaller working groups like "build script working groups"
     - Smaller working groups might get merge permissions more easily
+- Are there people using rustc without cargo
+  - All hyperscallers use rustc directly (bazal)
+  - At some companies devs can directly cargo and ci uses bazal
+    - Bazal config derived from cargo.toml
+    - rules-rust bazal
+    - build.rs can be a major challenge
+      - Each individual build.rs needs patches
+      - Likes openssl for example
+  - Google wants to build everything from source in a single tool
+- Speaking of bazal, caching

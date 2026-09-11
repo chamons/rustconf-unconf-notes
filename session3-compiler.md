@@ -30,4 +30,12 @@
     - Crate gets compiled into AST
     - Lot of edition stuff happens very early before AST
     - Compiler interfaces would be much after that, so it really doesn't help
-  -
+  - MIR gets a lot of little changes but very few large changes
+    - enum discrimiates
+    - walking MIR also changed
+    - "Stable MIR" is not fully stable, just slower large breaks
+  - There are only a handful of people who need this, but those projects might be widely used
+  - Discussion of use cases, chrome is doing some internal stuff
+- Wish List Discussion
+  - How do we do cross language threading annotations
+    - C/C++ locks used in rust

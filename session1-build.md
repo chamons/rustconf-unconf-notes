@@ -71,4 +71,16 @@
       - Each individual build.rs needs patches
       - Likes openssl for example, or protobuf compiler, or codegen, or bindgen
   - Google wants to build everything from source in a single tool
-- Speaking of bazal, caching
+- Speaking of bazal, how do we cache CI
+  - How do we cache? Well just use bazal
+  - Tried uses sccahce, required 9 patches
+    - 75-80% of build
+    - You also need to patch cargo :whomp-whomp:
+  - One cargo team member working on exploring target directory caching (content addressable storage)
+    - Believe Dev is Part funded, so hope to see something
+    - Maybe they could https://opendal.apache.org/
+      - Can use Redis, s3, whatever behind the scenes
+  - rust-chef is a potential solution
+    - https://github.com/LukeMathWalker/cargo-chef
+  - One person manually bake that into the base image directly
+- Rust zulip is most active, except embedded which is still matrix

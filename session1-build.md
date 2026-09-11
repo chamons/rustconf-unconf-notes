@@ -69,6 +69,6 @@
     - rules-rust bazal
     - build.rs can be a major challenge
       - Each individual build.rs needs patches
-      - Likes openssl for example
+      - Likes openssl for example, or protobuf compiler, or codegen, or bindgen
   - Google wants to build everything from source in a single tool
 - Speaking of bazal, caching

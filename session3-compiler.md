@@ -98,4 +98,5 @@
     - Clippy needs MIR for:
       - FFI,
       - Can something be a const function checks
+        - This can be wrong due to the MIR being optimization what they are looking at
       - Data flow lints

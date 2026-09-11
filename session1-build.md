@@ -134,3 +134,9 @@
     - Does cargo need to parse rust flags, linker
 - cargo-rustflags
   - https://crates.io/crates/cargo-rustflags
+- Common Opinion - Rust Foundation should send more money to cargo instead of just loving rustc
+- Target directory size
+  - With multiple agents running in parallel, you can fill harddrive
+  - Discussion for a centralize target directory
+  - https://github.com/dnlmlr/cargo-clean-all
+  - Slowly grows, old dependencies

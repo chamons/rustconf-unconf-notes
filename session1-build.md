@@ -42,3 +42,8 @@
       - default-features = yesstd
       - WANT: No way to say "I want all default features except you"
       - Terrible Hack - Define new custom tuple which happens to have existing one with different name
+- Things we like
+  - Getting faster
+  - Cargo nightly feature someone wants to go stable - Depend on a path (if anything changes, rebuild, glob tree)
+  - Nightly Feature: Proc macro to track env variables paths 
+    - Can you track directory, think so - yes

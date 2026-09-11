@@ -96,7 +96,11 @@
     - No one has put in effort to put hook in rustc
     - But it sounds like there is interest in doing this
     - Clippy needs MIR for:
-      - FFI,
+      - FFI
       - Can something be a const function checks
         - This can be wrong due to the MIR being optimization what they are looking at
       - Data flow lints
+    - Google engineer - We are going to get someone to do that soon.
+      - They really want this, now
+      - "This is going to get solved quickly"
+    - We just need a query that is the non-optimized

@@ -28,6 +28,7 @@
   - Should I use features -> No
   - Want: These features are only set by final executable
   - RFC: Global Features
+    - https://internals.rust-lang.org/t/pre-rfc-mutually-excusive-global-features/19618
   - Feature: Features with values X=Y
   - Trouble - Test only extensions
     - Maybe solve with workspaces defines
@@ -123,4 +124,13 @@
   - Opinion: We don't need bit for bit, but you better caching
   - Bazal gets you that by default
   - A source cache + flags hash would get you most of the way there
--
+  - Potentially merkle tree of file hashes
+  - Trim-path - Sanitize final binary remove `/home/user` 
+    - https://github.com/rust-lang/cargo/issues/12137#issuecomment-5607218160
+  - Windows embed timestamps
+  - Reproducible elfs have their own trouble
+  - sccahce had a PR to remove paths
+  - Absolute paths to linker vs relative linker
+    - Does cargo need to parse rust flags, linker
+- cargo-rustflags
+  - https://crates.io/crates/cargo-rustflags

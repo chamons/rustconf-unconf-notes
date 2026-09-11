@@ -37,5 +37,9 @@
   - There are only a handful of people who need this, but those projects might be widely used
   - Discussion of use cases, chrome is doing some internal stuff
 - Wish List Discussion
-  - How do we do cross language threading annotations
-    - C/C++ locks used in rust
+  - More LLVM + rustc cross langauge stuff
+    - How do we do cross language threading annotations in rust
+      - C/C++ locks used in rust
+    - Borrow sanitizer - How memory do be working
+    - ubsan to rustc - Look for undefined behavior in rust (maybe in release)
+    - Parity across ecosystem

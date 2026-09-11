@@ -47,3 +47,16 @@
   - Cargo nightly feature someone wants to go stable - Depend on a path (if anything changes, rebuild, glob tree)
   - Nightly Feature: Proc macro to track env variables paths 
     - Can you track directory, think so - yes
+- Cargo dev (Adam?) had half day a week dev time to hack on this
+  - So small incremental changes are more likely to get ths
+  - However, cargo maintainer in red is getting funded
+- Cargo dev at table - We do not have enough to review PRs
+  - The time is fragmented, so large PRs are unlikely to get merged
+- How do we donate time to make this better?
+  - Small PRs get ignored
+  - How do we get onboarded?
+  - Another project had a dev write up a top level RFC and farmed that out to newer devs
+  - Best today - Bug someone on zulip
+  - What is a company wants to drop some money to get a certain issues fixes?
+  - There are some smaller working groups like "build script working groups"
+    - Smaller working groups might get merge permissions more easily

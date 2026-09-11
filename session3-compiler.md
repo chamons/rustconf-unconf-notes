@@ -86,3 +86,16 @@
         - What about inlining?
       - Borrow check and codegen specifically written on MIR
       - Discussion about THIR and monomorphization
+  - What would it take to get rustc public c interface so they could use public not nightly?
+    - They (NVIDIA) don't want to fork entire toolchain
+    - Loop information pushed through MIR
+      - This is loop start/end/steps
+      - A custom lowering stuff 
+    - Maybe emitting a second section/block (?) depending on appetite
+  - Is there a way to run clippy before optimization
+    - No one has put in effort to put hook in rustc
+    - But it sounds like there is interest in doing this
+    - Clippy needs MIR for:
+      - FFI,
+      - Can something be a const function checks
+      - Data flow lints

@@ -21,4 +21,24 @@
   - Why do we communicate with build system with env variables and untyped strings?
   - This discussion comes up every 6 months? zig build works rather well
   - If we could require version X of rust had Y version of clang, it would really make some things easier
-    - Problem: Bootstraps times are already rough. Clang also requires some system libraries
+    - Problem: Bootstraps times are already rough. Clang also requires some system libraries. 
+  - Feature Unification 
+    - Mutual incompatible features - incompatible
+    - Futures are not indef
+    - Should I use features -> No
+    - Want: These features are only set by final executable
+    - RFC: Global Features
+    - Feature: Features with values X=Y
+    - Trouble - Test only extensions
+      - Maybe solve with workspaces defines
+      - Ok keep test hardness code in always
+      - Path = . workaround with additional features 
+        - dev dependencies include yourself with additional features
+        - Recursively defines can be difficult to setup and reason against
+        - Difficult to reason about when deps change
+      - Rustls - Desire to have zero features beyond extra crates and depend on dead code stripping
+      - What about libstd??
+      - nostd vs yesstd
+        - default-features = yesstd
+        - WANT: No way to say "I want all default features except you"
+        - Terrible Hack - Define new custom tuple which happens to have existing one with different name

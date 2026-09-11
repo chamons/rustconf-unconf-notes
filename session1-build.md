@@ -115,3 +115,12 @@
     - Every random person shouldn't be able to push a Microsoft prefixed name
     - This would potentially help with with discoverable / trust
     - foo-utils, utils-foo, utils-rs - Are they from the same team or a random
+    - Mild help with Supply chain utility 
+      - Tarmegddon talk yesterday - crates.io discussion
+        - This version has an active CVE
+- Reproducible Builds
+  - If we have less variance, better caching
+  - Opinion: We don't need bit for bit, but you better caching
+  - Bazal gets you that by default
+  - A source cache + flags hash would get you most of the way there
+-

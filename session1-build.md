@@ -84,3 +84,18 @@
     - https://github.com/LukeMathWalker/cargo-chef
   - One person manually bake that into the base image directly
 - Rust zulip is most active, except embedded which is still matrix
+- Proposal to make debug builds - 60%
+  - LLVM is very slow
+  - TPDE Backend
+  - Discussion:
+    - https://rust-lang.zulipchat.com/#narrow/channel/421156-gsoc/topic/Idea.3A.20TPDE.20codegen.20backend.20for.20rustc/near/575001394
+    - Potential option if we can get funding
+  - How is that different than cranelift
+    - That is a full new backend (more work to setup)
+    - TPDE is easier to setup and gives better codegen
+    - Crainlift dev got hired and is not spending less time
+    - Final results weren't good enough to push cranelift harder
+- There was a discussion to default level
+  - Line only is an option today
+  - https://doc.rust-lang.org/cargo/reference/profiles.html#debug
+  -

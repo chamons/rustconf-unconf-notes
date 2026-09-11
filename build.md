@@ -1,0 +1,20 @@
+# Build Processes
+
+- Discussion of target triple/tuple vs target
+   - Cargo config toml vs cargo
+   - Does not scale well with workspaces
+   - Mixed target workspace: WASM / Embedded / GPU
+    - Difficult to even talk about the conflict as there aren't good terms
+    - "Thing runs on ARM vs thing run on x86", but they both use the same wasm blob. Having to check in blobs
+- Justfile vs Makefile wrapping cargo is a common work around
+  - Xcode and VS has thing built in a bit
+- Cargo Wants
+  - If cargo had an escape to let us execute an arbitrary script
+  - Problem: Cargo is already dependency resolution, build system, should it also allow task execution as well
+- Why is build.rs the way it is
+  - Historically people wanted to get rid of it - It allows arbitrary code execution
+  - Some people need it for env variable setting
+  - Some people want it for codegen
+  - Some people need it for building C deps
+  - There were people considering sandboxing or allowing only to point to prebuild stuff
+  - Unable Feature: Multiple build scripts

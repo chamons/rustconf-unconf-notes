@@ -104,3 +104,4 @@
       - They really want this, now
       - "This is going to get solved quickly"
     - We just need a query that is the non-optimized
+    - In past, clippy disabled optimizations for reasons like this

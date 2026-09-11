@@ -41,6 +41,11 @@
     - How do we do cross language threading annotations in rust
       - C/C++ locks used in rust
       - This is type system parsing sugar passes to clang (?)
+      - A macro that expands to stuff clang understands
+      - Could rust just do just is half and C++ do its half
+      - Do we need a tool that handles both sides at once?
+      - This is something Google is interested, sounds like they can do some staffing, they have some existing code/algo on the C++
+        - Looking of community championing
     - Borrow sanitizer - How memory do be working
     - ubsan to rustc - Look for undefined behavior in rust (maybe in release)
       - Overflows, alignments
@@ -55,3 +60,29 @@
     - In unsafe blocks we don't have checks
     - Discussion about what things rust specifically doesn't need
   - Much/Most standard library has debug assertions today that covers a portion of this
+  - Discussion on const generics abuse/feature
+    - Abusing LTO flags joke
+    - Feature is moving along now (weekly updates, was paused?)
+    - Some simpler cases are closer
+    - C++ fancy stuff will be a _long_ time from now
+  - MLIR
+    - Another level beyond MIR?
+    - Chris (Latner?)
+    - In LLVM project today
+    - Modular IR that you can generate IR from
+    - LLVM IR is a dialect of MLIR
+    - SSA form in control graph
+    - Everyone on clang side thinks going from AST -> codegen is a missed idea
+    - NOTE: This is over notetaker's head a bit
+    - NVIDIA - Has their own dilect 
+      - Rustc public interface only has MIR, wants something for THIR (?)
+      - What they want needs structured control flow
+      - They are emitting LLVM IR
+      - SF/CIF lifting discussion - This is a research question it sounds like
+      - This might be a crazy idea, but you could just generate C?
+      - Some of these mismatch in how the two handle for loop gets optimized/low from CIF
+      - Maybe lower to MIR with metadata to reconstruct
+        - Annontations passed through MIR seems possibility
+        - What about inlining?
+      - Borrow check and codegen specifically written on MIR
+      - Discussion about THIR and monomorphization

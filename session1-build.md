@@ -98,4 +98,9 @@
 - There was a discussion to default level
   - Line only is an option today
   - https://doc.rust-lang.org/cargo/reference/profiles.html#debug
-  -
+- What are things we like
+  - It generally works
+- You have a problem, you use workspaces, you have more problems
+  - One person has 13 different top level crates
+  - Host targets + embedded targets in single workspaces pain
+  - Workspaces work well with library + one or two executables, until you have different features

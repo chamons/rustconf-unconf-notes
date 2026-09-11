@@ -46,10 +46,12 @@
       - Overflows, alignments
       - Unaligned access in embedded system are very hard to prevent/detect
         - The memory buffer might be correctly aligned but bit picked data might not be
+        - Question if standard library cover some/much of this (?)
     - Parity across ecosystem
   - So merge MIRI in rust?
     - Some of these yet, but some bits not
     - Does not have to be safe exact tools, but common things across ecosystem helps people opt-in more
   - Undefined behavior vs guaranteed behavior 
     - In unsafe blocks we don't have checks
-    -
+    - Discussion about what things rust specifically doesn't need
+  - Much/Most standard library has debug assertions today that covers a portion of this

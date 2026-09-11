@@ -105,3 +105,4 @@
       - "This is going to get solved quickly"
     - We just need a query that is the non-optimized
     - In past, clippy disabled optimizations for reasons like this
+- Q: rustc doesn't do optimizations in AST, just MIR - Yes, that is believed to be the case

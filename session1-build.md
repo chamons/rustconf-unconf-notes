@@ -18,3 +18,7 @@
   - Some people need it for building C deps
   - There were people considering sandboxing or allowing only to point to prebuild stuff
   - Unable Feature: Multiple build scripts
+  - Why do we communicate with build system with env variables and untyped strings?
+  - This discussion comes up every 6 months? zig build works rather well
+  - If we could require version X of rust had Y version of clang, it would really make some things easier
+    - Problem: Bootstraps times are already rough. Clang also requires some system libraries
